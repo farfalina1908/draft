@@ -63,15 +63,73 @@ a {
 }
 
 .wrapper {
-  height: 100%;
-  padding-top: 60px;
+  /* height: 100%; */
+  padding-top: 20px;
   padding-bottom: 60px;
   display: flex;
+  margin-bottom: 20px;
   
 }
 
+/* gallery */
+.gallery-slider {
+   position: relative;
+   padding-top: 50px;
+   padding: 30px 0 70px 0;
+    margin: 0 auto;
+   @media screen and (min-width: 768px) {
+      padding-top: 0;
+   }
+   @media screen and (min-width: 1200px) {
+      padding-top: 0;
+   }
+}
+.gallery-slide-img {
+   text-align: center;
+   margin: 0 auto;
+}
+.gallery-img {
+   max-width: 100%;
+   margin: 0 auto;
+}
+.swiper-container {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+.gallery__slide {
+   margin-left: auto;
+   margin-right: auto;
+}
+.gallery-wrapper {
+   margin-top: 32px;
+   margin-bottom: 80px; 
+   @media screen and (min-width: 768px) {
+      margin-top: -144px;
+      margin-bottom: 100px;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-top: -98px;
+      margin-bottom: 140px;
+   }
+}
+.gallery {
+   padding: 0;
+   margin-bottom: 80px;
+   @media screen and (min-width: 768px) {
+      margin-bottom: 55px;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 130px;
+   }
+} 
+ .gallery__img {
+   padding: 0;
+   margin-left: auto;
+   margin-right: auto;
+}
 
-
+/* Reviews*/
 .reviews {
   margin-left: auto;
   margin-right: auto;
@@ -190,6 +248,15 @@ a {
 .slick-dots li.slick-active{}
 /* Элемент точки */
 .slick-dots li button{}
+
+
+/* Слайдер галерея */
+.top-slider {
+   min-width: 0; 
+  position: relative;
+  margin-left: auto;
+   margin-right: auto;
+}
 
 /* Слайдер отзывы */
 .slider {

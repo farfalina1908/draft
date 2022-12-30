@@ -12,5 +12,16 @@ pauseOnFocus:true,
 pauseOnHover:true,
 pauseOnDotsHover:true,
    });
-    
+
+   $(".top-slider").slick({
+      arrows: false,
+      speed: 500,
+      easing: "ease",
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      pauseOnFocus: true,
+      pauseOnHover: true,
+   });
 })
+
