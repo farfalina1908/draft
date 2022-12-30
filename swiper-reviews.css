@@ -1,3 +1,63 @@
+:root {
+  --primary-white-color: #fcfcfc;
+
+--primary-text-color: #131313;
+
+--primary-background-color: #84a178;
+
+--cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .reviews {
   margin-left: auto;
   margin-right: auto;
