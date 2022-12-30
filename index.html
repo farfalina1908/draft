@@ -12,7 +12,62 @@
   <title>Document</title>
 </head>
 <body>
-  <section class="reviews">
+  <div class="wrapper">
+    <div class="slider">
+      <div class="slider__item">
+        <img
+        class="reviews__photo"
+        srcset="
+          ./images/reviews_images/user_1@1x.webp 1x,
+          ./images/reviews_images/user_1@2x.webp 2x
+        "
+        src="./images/reviews_images/user_1@1x.webp"
+        alt="users photo"
+      />
+      <p class="reviews__text">
+        I love visiting your cafe. You prepare the most delicious ice cream
+        in Los Angeles! In addition, you have beautiful serving, cozy
+        atmosphere and polite staff.
+      </p>
+      <p class="reviews__data">Emily, Los Angele</p>
+      </div>
+      <div class="slider__item">
+        <img
+        class="reviews__photo"
+        srcset="
+          ./images/reviews_images/user_2@1x.webp 1x,
+          ./images/reviews_images/user_2@2x.webp 2x
+        "
+        src="./images/reviews_images/user_2@1x.webp"
+        alt="users photo"
+      />
+      <p class="reviews__text">
+        Every day we come to you with friends after classes in college. We
+        love your ice cream and casual atmosphere!
+      </p>
+      <p class="reviews__data">Bryan, New-York</p>
+      </div>
+      <div class="slider__item">
+        <img
+        class="reviews__photo"
+        srcset="
+          ./images/reviews_images/user_3@1x.webp 1x,
+          ./images/reviews_images/user_3@2x.webp 2x
+        "
+        src="./images/reviews_images/user_3@1x.webp"
+        alt="users photo"
+      />
+      <p class="reviews__text">
+        Ice cream is my passion! I love your chocolate hazelnut ice cream!
+        And I really like the excellent service - always served politely and
+        quickly!
+      </p>
+      <p class="reviews__data">Diana, Chicago</p>
+      </div>
+    </div>
+
+    
+  <!-- <section class="reviews">
     <h2 class="visually-hidden">Reviews</h2>
     <div class="reviews__container">
       <div class="swiper">
@@ -70,7 +125,19 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> -->
+
+
+<!-- Подключаем JQuery -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+<!-- Подключаем слайдер Slick -->
+<script src="./js/slick.min.js"></script>
+
+<!-- Подключаем файл скриптов -->
+<script src="./js/script.js"></script>
+
+</div>
 </body>
 </html>
 

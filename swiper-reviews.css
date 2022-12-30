@@ -8,11 +8,18 @@
 --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+*,
+*::before,
+*::after {
+  padding: 0px;
+	margin: 0px;
+	border: none;
+  box-sizing: border-box;
+}
 
-
-body {
+html, body {
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
-
   background-color: #fff;
 }
 
@@ -42,7 +49,8 @@ a {
   text-decoration: none;
 }
 
-.section {
+.wrapper {
+  height: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -91,10 +99,10 @@ a {
 }
 .reviews__text {
   border-radius: 24px;
-  background-color: var(--bg-color);
+  background-color: var(--primary-background-color);
   margin: 32px 20px;
   text-align: center;
-  color: var(--main-color-text);
+  color: var(--primary-white-color);
   letter-spacing: 0.04em;
 
   padding: 35px 39px;
@@ -125,7 +133,7 @@ a {
   font-size: 16px;
   line-height: 186%;
   margin-bottom: 32px;
-  color: var(--second-color-text);
+  color: var(--primary-text-color);
   @media screen and (max-width: 767px) {
     font-size: 20px;
   }
