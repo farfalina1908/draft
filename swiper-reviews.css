@@ -49,11 +49,6 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  height: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -66,6 +61,17 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.wrapper {
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  
+}
+
+
+
 .reviews {
   margin-left: auto;
   margin-right: auto;
@@ -143,3 +149,86 @@ a {
   margin: 0;
   padding: 0;
 }
+
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/* Слайдер отзывы */
+.slider {
+  min-width: 0; 
+  position: relative;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+.slider .slick-arrow.slick-prev{
+  left: 0;
+}
+.slider .slick-arrow.slick-next{
+  right: 0;
+}
+
+.slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li{
+  list-style: none;
+  margin: 0 10px;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active button{
+  width: 14px;
+  height: 14px;
+}
+/* Элемент точки */
+.slider .slick-dots li button{
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-background-color);
+  border-radius: 50%;
+}
+
+.slider__item {}
