@@ -61,38 +61,81 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
+.container {
+  margin: 0 auto;
+  /* max-width: 480px; */
+  padding-right: 20px;
+  padding-left: 20px;
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
 .wrapper {
   /* height: 100%; */
-  padding-top: 20px;
-  padding-bottom: 60px;
-  display: flex;
-  margin-bottom: 20px;
   
+  display: flex;
+   margin-left: auto;
+  margin-right: auto;
+  background-color: pink;
+
+  /* @media screen and (max-width: 480px) {
+    max-width: 480px;
+ padding-right: 20px;
+  padding-left: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  padding-right: 16px;
+    padding-left: 16px;
+  } */
 }
 
 /* gallery */
-.gallery-slider {
-   position: relative;
-   padding-top: 50px;
-   padding: 30px 0 70px 0;
-    margin: 0 auto;
+.top-slider {
+
+    /* margin-top: -32px;
+   margin-bottom: 80px;  */
+   margin: -32px 20px 80px 20px;
    @media screen and (min-width: 768px) {
-      padding-top: 0;
+      /* margin-top: -144px;
+      margin-bottom: 100px; */
+margin: -144px 32px 100px 32px;
    }
    @media screen and (min-width: 1200px) {
-      padding-top: 0;
+      /* margin-top: -98px;
+      margin-bottom: 140px; */
+      margin: -98px 94px 140px 93px;
+  
    }
 }
-.gallery-slide-img {
+/* .gallery-slide-img {
    text-align: center;
    margin: 0 auto;
-}
+} */
 .gallery-img {
-   max-width: 100%;
-   margin: 0 auto;
+   /* max-width: 100%;
+   margin: 0 auto; */
+   padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
-.swiper-container {
+/* .swiper-container {
    text-align: center;
    margin: 0;
    padding: 0;
@@ -100,8 +143,8 @@ a {
 .gallery__slide {
    margin-left: auto;
    margin-right: auto;
-}
-.gallery-wrapper {
+} */
+/* .gallery-wrapper {
    margin-top: 32px;
    margin-bottom: 80px; 
    @media screen and (min-width: 768px) {
@@ -112,8 +155,8 @@ a {
       margin-top: -98px;
       margin-bottom: 140px;
    }
-}
-.gallery {
+} */
+/* .gallery {
    padding: 0;
    margin-bottom: 80px;
    @media screen and (min-width: 768px) {
@@ -122,15 +165,16 @@ a {
    @media screen and (min-width: 1200px) {
       margin-bottom: 130px;
    }
-} 
- .gallery__img {
+}  */
+ /* .gallery-img {
    padding: 0;
    margin-left: auto;
    margin-right: auto;
-}
+} */
 
 /* Reviews*/
-.reviews {
+
+/* .reviews {
   margin-left: auto;
   margin-right: auto;
 
@@ -148,8 +192,8 @@ a {
     max-width: 1200px;
     // padding: 0 94px 100px 93px;
   }
-}
-.reviews__container {
+} */
+.slider__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,7 +220,7 @@ a {
 
   @media screen and (min-width: 768px) {
     padding: 28px 80px 29px;
-    margin-left: 32px;
+    margin: 32px 31px 32px 32px;
     margin-right: 31px;
     font-weight: 500;
     font-size: 14px;
@@ -184,9 +228,8 @@ a {
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 23px;
-    margin-right: 22px;
-    padding: 43px 109px;
+    margin: 32px 116px 32px 115px;
+    padding: 43px 74px 41px 73px;
     font-size: 16px;
     line-height: 186%;
   }
@@ -202,11 +245,11 @@ a {
     font-size: 20px;
   }
 }
-.swiper {
+/* .swiper {
   text-align: center;
   margin: 0;
   padding: 0;
-}
+} */
 
 
 /* Слайдер */
@@ -282,19 +325,26 @@ a {
 }
 .slider .slick-dots li{
   list-style: none;
-  margin: 0 10px;
+  margin: 0 18px 40px;
+  @media screen and (min-width: 768px){
+margin: 0 18px 80px;
+  }
+   @media screen and (min-width: 1200px){
+margin: 0 18px 100px;
+  }
 }
 /* Активная точка */
 .slider .slick-dots li.slick-active button{
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-background-color);
 }
 /* Элемент точки */
 .slider .slick-dots li button{
   font-size: 0;
-  width: 10px;
-  height: 10px;
-  background-color: var(--primary-background-color);
+  width: 12px;
+  height: 12px;
+  background-color: #D9D9D9;;
   border-radius: 50%;
 }
 
